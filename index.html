@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Forms lab</h1>
+    <form action="http://example.com/submit_form" method = "POST" target="_blank">
+       
+        <link rel="stylesheet" href="style.css">
+
+        <form> 
+ <label for = "text">Username:</label><br>          
+<input type = "text" id= "username" name="username" autofocus required><br>
+<label for = "password">Password:</label><br>
+<input type = "password" id="password " name="password" required><br>
+
+<p>What is your gender?</p>
+<input type="radio" id="male" name="gender" value="male">
+  <label for="male">male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="other">female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">other</label><br>
+
+  <p>What programming languages do you know?</p>
+  <input type="checkbox" id="JavaScript" name="Planguages" value="JavaScript">
+  <label for="JavaScript"> JavaScript</label><br>
+  <input type="checkbox" id="Html" name="Planguages2" value="Html">
+  <label for="Html">Html</label><br>
+  <input type="checkbox" id="CSS" name="Planguages3" value="CSS">
+  <label for="css">CSS</label><br><br>
+
+  <p>Upload your profile picture</p>
+  <input type="file" class="form-control" id="file"><br>
+  <!--<label class="input-group-text" for="inputGroupFile02">Upload</label><br>-->
+
+  <p>Select your birth date</p>
+  <input type="date" id="date of birth" name="anniversity" value="date of birth" required><br> 
+
+  <p>Write a valid e-mail</p>
+  <input type="email" id="e-mail" name="email" placeholder="youremail@mail.com" required><br> 
+
+  <p>Please upload a valid URL to your website</p>
+  <input type="url" id="URL" name="Upload"><br> 
+
+  <p>What is your age?</p>
+  <input type="number" id="age" name="age" max="99" min="18"><br>
+
+<p>How do you like answering this form? (between 0-10)</p>
+  <input type="range" id="satisfaction" name="satisfaction" max="10" min="0"><br>
+
+  <label for="number">Phone Number</label><br>
+  <input type="number" id="phonenumber" name="phonenumber" placeholder="123-455-6780" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+<br>
+
+<input type = "submit" value="submit" formenctype="multipart/form-data"> <br>
+
+<!---it is interesting how each input works. also the attributes can make a huge difference-->
+
+        </form>
+</body>
+</html>
